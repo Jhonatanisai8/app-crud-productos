@@ -35,19 +35,19 @@ public class ProductoServiceIMPL implements ProductoService {
   private ProductoDTO mapToDTO(Producto producto) {
     ProductoDTO dto = new ProductoDTO();
     dto.setId(producto.getId());
-    dto.setName(producto.getNombre());
-    dto.setCategory(producto.getCategoria());
+    dto.setNombre(producto.getNombre());
+    dto.setCategoria(producto.getCategoria());
     dto.setStock(producto.getStock());
-    dto.setPrice(producto.getPrecio());
+    dto.setPrecio(producto.getPrecio());
     return dto;
   }
 
   private Producto mapToEntity(ProductoDTO dto) {
     Producto producto = new Producto();
-    producto.setNombre(dto.getName());
-    producto.setCategoria(dto.getCategory());
+    producto.setNombre(dto.getNombre());
+    producto.setCategoria(dto.getCategoria());
     producto.setStock(dto.getStock());
-    producto.setPrecio(dto.getPrice());
+    producto.setPrecio(dto.getPrecio());
     return producto;
   }
 

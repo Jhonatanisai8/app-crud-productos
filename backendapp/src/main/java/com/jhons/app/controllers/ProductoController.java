@@ -17,7 +17,7 @@ import jakarta.validation.Valid;
 import lombok.RequiredArgsConstructor;
 
 @RestController
-@RequestMapping("/api/productos")
+@RequestMapping("/api/v1/productos")
 @RequiredArgsConstructor
 public class ProductoController {
 
@@ -33,4 +33,4 @@ public class ProductoController {
     return new ResponseEntity<>(productoService.crear(productoDTO), HttpStatus.CREATED);
   }
 
-}
+}    

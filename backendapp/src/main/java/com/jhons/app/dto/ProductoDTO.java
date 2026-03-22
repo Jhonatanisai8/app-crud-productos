@@ -17,14 +17,14 @@ public class ProductoDTO {
   private Long id;
 
   @NotBlank(message = "El nombre es obligatorio")
-  private String name;
+  private String nombre;
 
   @NotBlank(message = "La categoría es obligatoria")
-  private String category;
+  private String categoria;
 
   @Min(value = 0, message = "El stock no puede ser negativo")
   private Integer stock;
 
   @Positive(message = "El precio debe ser mayor a 0")
-  private Double price;
+  private Double precio;
 }
